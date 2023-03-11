@@ -36,7 +36,7 @@ const SidebarTop = () => {
           fontWeight='extrabold'
           whiteSpace='nowrap'
         >
-          Magnet Web
+          快点磁力
         </Text>
       </HStack>
     </Flex>

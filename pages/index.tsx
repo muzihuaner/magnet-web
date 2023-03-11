@@ -33,14 +33,14 @@ const Home: NextPage = () => {
         whiteSpace='nowrap'
         margin={10}
       >
-        Magnet Web
+        快点磁力搜索🧲
       </Heading>
       <HStack spacing={0}>
         <Input
           roundedRight='none'
           borderWidth={2}
           size='lg'
-          placeholder={'keyword'}
+          placeholder={'电影、电视剧、动漫、文档...'}
           value={query}
           onChange={(e: ChangeEvent<HTMLInputElement>) => setQuery(e.target.value)}
         />
@@ -52,7 +52,7 @@ const Home: NextPage = () => {
           isLoading={btnLoading}
           onClick={handleSearchBtnClick}
         >
-          Search
+          搜索
         </Button>
       </HStack>
     </Flex>

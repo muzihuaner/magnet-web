@@ -67,7 +67,7 @@ const TorrentItemCard = ({ item, trans }: TorrentListItem) => {
   useEffect(() => {
     if (!hasCopied) return
     toast({
-      title: 'Copy Magnet Success',
+      title: '磁力链接已复制！',
       position: 'top',
       status: 'success',
       duration: 3000,
@@ -114,21 +114,21 @@ const TorrentItemCard = ({ item, trans }: TorrentListItem) => {
           provider === 'pirate-bay' || provider === 'nyaa-si'
             ?
             <HStack>
-              <Text>category:</Text>
+              <Text>类别:</Text>
               <Text fontWeight='semibold'>{item.Category}</Text>
             </HStack>
             : null
         }
         <HStack>
-          <Text>date:</Text>
+          <Text>日期:</Text>
           <Text fontWeight='semibold'>{showDate}</Text>
         </HStack>
         <HStack>
-          <Text>seeders:</Text>
+          <Text>做种:</Text>
           <Text fontWeight='semibold'>{item.Seeders}</Text>
         </HStack>
         <HStack>
-          <Text>leechers:</Text>
+          <Text>下载:</Text>
           <Text fontWeight='semibold'>{item.Leechers}</Text>
         </HStack>
       </SimpleGrid>
