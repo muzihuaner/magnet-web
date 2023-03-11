@@ -61,7 +61,7 @@ export const SearchBar = () => {
           isLoading={btnLoading}
           onClick={handleSearchBtnClick}
         >
-          Search
+          搜索
         </Button>
       </Box>
       <Box display={{ base: 'flex', md: 'none' }}>
