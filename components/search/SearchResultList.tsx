@@ -107,7 +107,7 @@ const TorrentItemCard = ({ item, trans }: TorrentListItem) => {
           </Button>
         </HStack>
         <HStack>
-          <Text>size:</Text>
+          <Text>大小:</Text>
           <Text fontWeight='semibold'>{item.Size}</Text>
         </HStack>
         {
