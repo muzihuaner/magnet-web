@@ -4,7 +4,7 @@ import { getHtml } from './index'
 
 export const gloTorrents = async (query: string, page: number = 1) => {
   const torrents: Torrent[] = []
-  const url = `https://gtdb.cc/search_results.php?search=${query}&sort=seeders&order=desc&page=${page}`
+  const url = `https://gtdb.to/search_results.php?search=${query}&sort=seeders&order=desc&page=${page}`
   const html = await getHtml(url)
   if (!html) return null
   const $ = cheerio.load(html)
